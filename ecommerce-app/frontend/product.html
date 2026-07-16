@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Product — Trailmark</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">Trailmark <small>Trail Supply Co.</small></a>
+    <nav class="main-nav">
+      <a href="index.html">Shop</a>
+      <a href="index.html?category=Gear">Gear</a>
+      <a href="index.html?category=Apparel">Apparel</a>
+      <a href="index.html?category=Camp">Camp</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="cart.html" class="cart-link">
+        Cart <span class="cart-count hidden" id="cart-count">0</span>
+      </a>
+      <div id="auth-nav-slot" class="nav-actions"></div>
+    </div>
+  </div>
+</header>
+
+<main class="container" id="product-slot">
+  <p class="loading-text">Loading product…</p>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© 2026 Trailmark Trail Supply Co. — demo storefront.</span>
+    <a href="index.html">← Back to shop</a>
+  </div>
+</footer>
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>

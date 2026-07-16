@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Trailmark — Trail-tested outdoor gear</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">Trailmark <small>Trail Supply Co.</small></a>
+    <nav class="main-nav">
+      <a href="index.html">Shop</a>
+      <a href="index.html?category=Gear">Gear</a>
+      <a href="index.html?category=Apparel">Apparel</a>
+      <a href="index.html?category=Camp">Camp</a>
+    </nav>
+    <div class="nav-actions">
+      <form class="search-form" id="search-form">
+        <input type="text" id="search-input" placeholder="Search products..." />
+        <button type="submit" aria-label="Search">→</button>
+      </form>
+      <a href="cart.html" class="cart-link">
+        Cart <span class="cart-count hidden" id="cart-count">0</span>
+      </a>
+      <div id="auth-nav-slot" class="nav-actions"></div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <svg class="hero-contours" viewBox="0 0 1200 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M-20,340 C200,300 300,380 500,320 C700,260 800,340 1000,300 C1100,280 1150,300 1220,280" fill="none" stroke="#2b5c4a" stroke-width="1"/>
+    <path d="M-20,300 C220,260 320,340 520,280 C720,220 820,300 1020,260 C1120,240 1170,260 1220,240" fill="none" stroke="#2b5c4a" stroke-width="1"/>
+    <path d="M-20,260 C240,220 340,300 540,240 C740,180 840,260 1040,220 C1140,200 1190,220 1220,200" fill="none" stroke="#2b5c4a" stroke-width="1"/>
+    <path d="M-20,60 C180,20 260,90 460,50 C660,10 760,90 960,50 C1080,30 1140,50 1220,30" fill="none" stroke="#b5652c" stroke-width="1"/>
+    <path d="M-20,100 C200,60 280,130 480,90 C680,50 780,130 980,90 C1100,70 1150,90 1220,70" fill="none" stroke="#b5652c" stroke-width="1"/>
+  </svg>
+  <div class="container">
+    <span class="eyebrow">Field-tested since day one</span>
+    <h1>Gear built for the miles between trailheads.</h1>
+    <p class="lede">Jackets, packs, and camp kit chosen for one job: holding up on real trail, in real weather, trip after trip.</p>
+    <div class="hero-actions">
+      <a href="#catalog" class="btn btn-primary">Shop the catalog</a>
+      <a href="register.html" class="btn btn-secondary">Create an account</a>
+    </div>
+  </div>
+</section>
+
+<main class="container" id="catalog">
+  <div class="filter-row" id="filter-row">
+    <button class="chip active" data-category="">All</button>
+  </div>
+
+  <div id="product-grid-slot">
+    <p class="loading-text">Loading products…</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© 2026 Trailmark Trail Supply Co. — demo storefront.</span>
+    <span>Built with Express, MongoDB &amp; vanilla JS.</span>
+  </div>
+</footer>
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
